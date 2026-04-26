@@ -2,7 +2,7 @@
 
 **Student:** Your Full Name
 **Semester:** Current Semester and Year
-**Live Site:** [View Site](https://your-username.github.io/your-repo-name/)
+**Live Site:** [View Site](https://cryspaulino.github.io/wdd331-practice/)
 
 ## About
 
