@@ -1,0 +1,162 @@
+/* ========================================
+   TOKENS
+   Define your design decisions here.
+   Everything else in this file should
+   reference these tokens with var().
+   ======================================== */
+:root {
+    --color-primary: rgb(198, 198, 249);
+    --color-background: rgb(218, 215, 215);
+    --color-text: black;
+    --color-accent: rgba(194, 194, 224, 0.855);    
+
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+    --font-size: 16px;
+
+    --border-radius: 15px;
+    --padding: clamp(1.5rem, 2rem, 2.5rem);
+}
+
+/* ========================================
+   RESET
+   A minimal reset so you start clean.
+   ======================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   BASE STYLES
+   Style the body, links, and any raw
+   HTML elements here. Use nesting.
+   ======================================== */
+body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: var(--space-md);
+    padding: var(--padding);
+
+    a {
+        color: var(--color-text);
+
+        &:hover {
+            color: var(--color-accent);
+        }
+    }
+}
+
+/* ========================================
+   NAVIGATION
+   Style .site-nav so students can get
+   back to the homepage.
+   ======================================== */
+.site-nav {
+    padding: clamp(1.5rem, 2rem, 2.5rem);
+    margin-bottom: var(--space-lg);
+}
+
+/* ========================================
+   BOARD HEADER
+   Style the page header area.
+   ======================================== */
+.board-header {
+    /* text alignment */
+    align-content: center;
+    margin: var(--space-sm);
+    padding: var(--padding);
+
+    h1 {
+        font-size: clamp(1rem, 1.5rem, 2rem);
+    }
+
+    p {
+        color: var(--color-text);
+        line-height: var(--space-md);
+    }
+}
+
+/* ========================================
+   CARD GROUP
+   Each section of cards (This Week,
+   Coming Up, Announcements).
+   ======================================== */
+.card-group {
+    margin-bottom: var(--space-lg);
+
+    h2 {
+        background-color: var(--color-background);
+        color: var(--color-text);
+        margin: var(--space-lg);
+    }
+}
+
+/* ========================================
+   CARDS GRID
+   Layout the .cards container as a
+   responsive grid or flex layout.
+   ======================================== */
+.cards {
+    display: grid;
+    gap: calc(var(--space-md) - 10px);
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ========================================
+   INDIVIDUAL CARD
+   Style each .card article. This is where
+   most of your nesting will happen.
+   ======================================== */
+.card {
+    background-color: var(--color-primary);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--color-accent, rgb(192, 192, 192));
+
+    .card-tag {
+        font-size: var(--font-size);
+        padding: calc(var(--padding) - 25px);
+        margin: var(--space-sm);
+        background-color: var(--color-accent);
+        border-radius: calc(var(--border-radius) - 5px);
+    }
+
+    h3 {
+        /* card title styles */
+    }
+
+    p {
+        /* card body text */
+    }
+
+    .card-meta {
+        display: flex;
+        justify-content: space-between;
+        margin-top: var(--space-md);
+
+        span, a{
+            font-size: calc(var(--font-size) - 0.1rem);
+            font-style: italic;
+        }
+    }
+}
+
+/* ========================================
+   FOOTER
+   Style the .board-footer at the bottom.
+   ======================================== */
+.board-footer {
+    /* muted color, top border */
+    align-content: center;
+    padding: var(--padding);
+    color: var(--color-text);
+    border-top: 1px solid var(--color-accent);
+}
