@@ -1,0 +1,24 @@
+/* Color tokens: define all color values for the site.
+   Name by purpose (--color-primary, --color-surface)
+   not appearance (--blue, --light-gray). */
+:root {
+  --color-primary: rgb(198, 198, 249);
+  --color-background: rgb(218, 215, 215);
+  --color-text: black;
+  --color-accent: rgba(194, 194, 224, 0.855);
+
+  --color-accent: rgb(154, 153, 153);
+  --color-background: white;
+  --color-text: black;
+  --color-primary: rgb(158, 158, 222);
+
+  --space-small: 1rem;
+  --space-medium: 1.5rem;
+  --space-large: 2rem;
+
+  --font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  --border-radius: 10px;
+}

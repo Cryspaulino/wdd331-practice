@@ -4,7 +4,7 @@
    Everything else in this file should
    reference these tokens with var().
    ======================================== */
-:root {
+/* :root {
     --color-primary: rgb(198, 198, 249);
     --color-background: rgb(218, 215, 215);
     --color-text: black;
@@ -17,28 +17,29 @@
     --font-family: Georgia, 'Times New Roman', Times, serif;
     --font-size: 16px;
 
-    --border-radius: 15px;
-    --padding: clamp(1.5rem, 2rem, 2.5rem);
-}
+    --border-radius: 15px; */
+    /* 1-2vw for subtle scaling, 3-5vw for moderate scaling and 6+vw for aggresive scaling. */
+    /* --padding: clamp(1.5rem, 4vw, 2.5rem); */
+/* } */
 
 /* ========================================
    RESET
    A minimal reset so you start clean.
    ======================================== */
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* ========================================
    BASE STYLES
    Style the body, links, and any raw
    HTML elements here. Use nesting.
    ======================================== */
-body {
+/* body {
     font-family: var(--font-family);
     color: var(--color-text);
     background-color: var(--color-background);
@@ -52,44 +53,43 @@ body {
             color: var(--color-accent);
         }
     }
-}
+} */
 
 /* ========================================
    NAVIGATION
    Style .site-nav so students can get
    back to the homepage.
    ======================================== */
-.site-nav {
-    padding: clamp(1.5rem, 2rem, 2.5rem);
+/* .site-nav {
+    padding: var(--padding);
     margin-bottom: var(--space-lg);
-}
+} */
 
 /* ========================================
    BOARD HEADER
    Style the page header area.
    ======================================== */
-.board-header {
-    /* text alignment */
+/* .board-header {
     align-content: center;
     margin: var(--space-sm);
     padding: var(--padding);
 
     h1 {
-        font-size: clamp(1rem, 1.5rem, 2rem);
+        font-size: var();
     }
 
     p {
         color: var(--color-text);
         line-height: var(--space-md);
     }
-}
+} */
 
 /* ========================================
    CARD GROUP
    Each section of cards (This Week,
    Coming Up, Announcements).
    ======================================== */
-.card-group {
+/* .card-group {
     margin-bottom: var(--space-lg);
 
     h2 {
@@ -97,29 +97,29 @@ body {
         color: var(--color-text);
         margin: var(--space-lg);
     }
-}
+} */
 
 /* ========================================
    CARDS GRID
    Layout the .cards container as a
    responsive grid or flex layout.
    ======================================== */
-.cards {
+/* .cards {
     display: grid;
     gap: calc(var(--space-md) - 10px);
     grid-template-columns: 1fr 1fr;
-}
+} */
 
 /* ========================================
    INDIVIDUAL CARD
    Style each .card article. This is where
    most of your nesting will happen.
    ======================================== */
-.card {
+/* .card {
     background-color: var(--color-primary);
     padding: var(--padding);
     border-radius: var(--border-radius);
-    box-shadow: var(--color-accent, rgb(192, 192, 192));
+    box-shadow: 3px 6px 8px var(--color-accent), 3px 6px 8px rgb(192, 192, 192);
 
     .card-tag {
         font-size: var(--font-size);
@@ -127,17 +127,17 @@ body {
         margin: var(--space-sm);
         background-color: var(--color-accent);
         border-radius: calc(var(--border-radius) - 5px);
-    }
+    } */
 
-    h3 {
+    /* h3 { */
         /* card title styles */
-    }
+    /* } */
 
-    p {
+    /* p { */
         /* card body text */
-    }
+    /* } */
 
-    .card-meta {
+    /* .card-meta {
         display: flex;
         justify-content: space-between;
         margin-top: var(--space-md);
@@ -147,16 +147,16 @@ body {
             font-style: italic;
         }
     }
-}
+} */
 
 /* ========================================
    FOOTER
    Style the .board-footer at the bottom.
    ======================================== */
-.board-footer {
+/* .board-footer { */
     /* muted color, top border */
-    align-content: center;
+    /* align-content: center;
     padding: var(--padding);
     color: var(--color-text);
     border-top: 1px solid var(--color-accent);
-}
+} */

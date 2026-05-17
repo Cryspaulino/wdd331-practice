@@ -1,0 +1,16 @@
+Custom Properties:
+
+6 - Could be improved: grid layout exists 
+cards are separated 
+But:
+
+Week responsive layout (Mobile not working). 
+spacing feels inconsistent
+layout feels unfinished
+
+
+
+
+
+NOTES:
+"lightningcss css/main.css -o dist/styles.css --minify --watch",
