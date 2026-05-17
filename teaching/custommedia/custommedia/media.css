@@ -1,0 +1,39 @@
+@custom-media --small (max-width: 800px);
+
+:root {
+  --background-one: lightblue;
+  --background-two: lightgrey;
+  --height: 300px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .one {
+    background-color: var(--background-one);
+    height: var(--height);
+  }
+
+  .two {
+    background-color: var(--background-two);
+    height: var(--height);
+  }
+}
+
+/* SMALL SCREEN */
+/* home */
+@media (--small) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* media */
+@media (--small) {
+  .media {
+    display: flex;
+    flex-direction: column;
+  }
+}

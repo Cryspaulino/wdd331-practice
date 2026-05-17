@@ -1,0 +1,96 @@
+@import url("./tokens/colors.css");
+/* @import url('') */
+/* Base element styles: body, headings, links, lists.
+   No classes here, only bare HTML element selectors.
+   Reference tokens with var(). */
+
+/* TODO: Style body, headings, links, and other base elements */
+body {
+  /* background-color: var(--color-background); */
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: var(--space-md);
+  padding: var(--padding);
+
+  a {
+    color: var(--color-text);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  .site-nav {
+    padding: var(--padding);
+    margin-bottom: var(--space-lg);
+  }
+
+  .board-header {
+    /* text alignment */
+    align-content: center;
+    margin: var(--space-sm);
+    padding: var(--padding);
+
+    h1 {
+      font-size: var();
+    }
+
+    p {
+      color: var(--color-text);
+      line-height: var(--space-md);
+    }
+  }
+
+  .card-group {
+    margin-bottom: var(--space-lg);
+
+    h2 {
+      background-color: var(--color-background);
+      color: var(--color-text);
+      margin: var(--space-lg);
+    }
+
+    .cards {
+      display: grid;
+      gap: calc(var(--space-md) - 10px);
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+      background-color: var(--color-primary);
+      padding: var(--padding);
+      border-radius: var(--border-radius);
+      box-shadow:
+        3px 6px 8px var(--color-accent),
+        3px 6px 8px rgb(192, 192, 192);
+
+      .card-tag {
+        font-size: var(--font-size);
+        padding: calc(var(--padding) - 25px);
+        margin: var(--space-sm);
+        background-color: var(--color-accent);
+        border-radius: calc(var(--border-radius) - 5px);
+      }
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--space-md);
+
+      span,
+      a {
+        font-size: calc(var(--font-size) - 0.1rem);
+        font-style: italic;
+      }
+    }
+  }
+
+  .board-footer {
+    /* muted color, top border */
+    align-content: center;
+    padding: var(--padding);
+    color: var(--color-text);
+    border-top: 1px solid var(--color-accent);
+  }
+}

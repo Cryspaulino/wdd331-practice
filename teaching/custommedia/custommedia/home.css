@@ -1,0 +1,36 @@
+:root{
+    --img-sm-width: 400px;
+    --img-md-width: 600px;
+}
+
+/* SMALL SCREEN */
+
+/* home page */
+@media (max-width: 600px) {
+    .home{
+        width: var(--img-sm-width);
+    }
+}
+
+/* media 2 */
+@media (max-width: 800px) {
+    .media{
+        width: var(--img-sm-width);
+    }
+}
+
+/* MEDIUM SCREEN */
+
+/* home page */
+@media (min-width: 601px) {
+    .home{
+        width: var(--img-md-width);
+    }
+}
+
+/* media 2 */
+@media (min-width: 801px) {
+    .media{
+        width: var(--img-md-width);
+    }
+}

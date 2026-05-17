@@ -1,7 +1,7 @@
 # WDD 331R Practice Site
 
-**Student:** Your Full Name
-**Semester:** Current Semester and Year
+**Student:** Crystal Paulino
+**Semester:** Spring 2026
 **Live Site:** [View Site](https://cryspaulino.github.io/wdd331-practice/)
 
 ## About
@@ -15,3 +15,4 @@ every push to main.
 
 - [Home](index.html)
 - [Custom Properties and Nesting](unit-1/custom-properties/index.html)
+- [Layered Components](unit-2/layered-components/index.html)
