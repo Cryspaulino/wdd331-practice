@@ -1,0 +1,12 @@
+/* Reminders: 
+Borders, outline, text decorations have color by default
+Box shadow, background color and svg fill need to be specified*/
+
+/* :root{
+    --border-color: lightblue;
+} */
+
+button{
+    color: rgb(114, 188, 212);
+    border: 2px solid currentColor;
+}
