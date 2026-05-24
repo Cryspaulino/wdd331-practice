@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scripture Study Companion</title>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="js/theme-preference.js"></script>
+    <link rel="stylesheet" href="dist/styles.css">
 </head>
+
 <body>
     <nav class="site-nav">
         <a href="../../index.html">&larr; Home</a>
@@ -18,6 +21,28 @@
     </nav>
 
     <header class="page-header">
+        <details class="theme-menu">
+            <summary class="theme-control">
+                <span class="visually-hidden">Color scheme</span>
+            </summary>
+            <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                <label class="theme-control theme-pick" data-theme-pick="light">
+                    <input name="theme-preference" type="radio" value="light">
+                    <span aria-hidden="true">&#9788;&#65039;</span>
+                    <span class="visually-hidden">Light</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="system">
+                    <input name="theme-preference" type="radio" value="system" checked>
+                    <span aria-hidden="true">&#9881;&#65039;</span>
+                    <span class="visually-hidden">System default</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="dark">
+                    <input name="theme-preference" type="radio" value="dark">
+                    <span aria-hidden="true">&#127766;</span>
+                    <span class="visually-hidden">Dark</span>
+                </label>
+            </div>
+        </details>
         <h1>Scripture Study Companion</h1>
         <p>Explore topics, save insights, and deepen your understanding of the gospel of Jesus Christ.</p>
     </header>
@@ -29,7 +54,8 @@
                 <article class="card">
                     <div class="card-tag">Book of Mormon</div>
                     <h3>The Atonement of Jesus Christ</h3>
-                    <p>Alma teaches that Christ would take upon Himself the pains, sicknesses, and infirmities of His people so that He would know how to succor them.</p>
+                    <p>Alma teaches that Christ would take upon Himself the pains, sicknesses, and infirmities of His
+                        people so that He would know how to succor them.</p>
                     <div class="card-footer">
                         <span>Alma 7:11&ndash;13</span>
                         <a href="#">Read</a>
@@ -38,7 +64,8 @@
                 <article class="card">
                     <div class="card-tag">Doctrine and Covenants</div>
                     <h3>Personal Revelation</h3>
-                    <p>The Lord speaks peace to the mind and heart through the Holy Ghost. Learning to recognize these promptings is central to spiritual growth.</p>
+                    <p>The Lord speaks peace to the mind and heart through the Holy Ghost. Learning to recognize these
+                        promptings is central to spiritual growth.</p>
                     <div class="card-footer">
                         <span>D&amp;C 8:2&ndash;3</span>
                         <a href="#">Read</a>
@@ -47,7 +74,8 @@
                 <article class="card">
                     <div class="card-tag">New Testament</div>
                     <h3>Faith in Christ</h3>
-                    <p>The Savior taught that faith as small as a mustard seed can move mountains. Faith is not just belief but a principle of action and power.</p>
+                    <p>The Savior taught that faith as small as a mustard seed can move mountains. Faith is not just
+                        belief but a principle of action and power.</p>
                     <div class="card-footer">
                         <span>Matthew 17:20</span>
                         <a href="#">Read</a>
@@ -56,7 +84,8 @@
                 <article class="card">
                     <div class="card-tag">Pearl of Great Price</div>
                     <h3>The Plan of Salvation</h3>
-                    <p>Abraham saw that intelligences were organized before the world was, and that among them God chose noble and great ones to be rulers.</p>
+                    <p>Abraham saw that intelligences were organized before the world was, and that among them God chose
+                        noble and great ones to be rulers.</p>
                     <div class="card-footer">
                         <span>Abraham 3:22&ndash;23</span>
                         <a href="#">Read</a>
@@ -65,7 +94,8 @@
                 <article class="card">
                     <div class="card-tag">Book of Mormon</div>
                     <h3>The Tree of Life</h3>
-                    <p>Lehi and Nephi both saw that the tree of life represents the love of God, which is most desirable above all things and most joyous to the soul.</p>
+                    <p>Lehi and Nephi both saw that the tree of life represents the love of God, which is most desirable
+                        above all things and most joyous to the soul.</p>
                     <div class="card-footer">
                         <span>1 Nephi 11:21&ndash;23</span>
                         <a href="#">Read</a>
@@ -74,7 +104,8 @@
                 <article class="card">
                     <div class="card-tag">New Testament</div>
                     <h3>Charity Never Faileth</h3>
-                    <p>Paul wrote that charity is the greatest of all gifts. It suffers long, is kind, and endures all things. Without it, all other gifts are nothing.</p>
+                    <p>Paul wrote that charity is the greatest of all gifts. It suffers long, is kind, and endures all
+                        things. Without it, all other gifts are nothing.</p>
                     <div class="card-footer">
                         <span>1 Corinthians 13:4&ndash;8</span>
                         <a href="#">Read</a>
@@ -147,4 +178,5 @@
         <p>&copy; Scripture Study Companion. Built as a WDD 331R assignment.</p>
     </footer>
 </body>
+
 </html>

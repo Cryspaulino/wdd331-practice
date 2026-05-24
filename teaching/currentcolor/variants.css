@@ -1,0 +1,30 @@
+.card {
+  color: steelblue;
+
+  border: 3px solid currentColor;
+
+  box-shadow: 0 0 5px currentColor;
+
+  background: color-mix(in oklch, currentColor 15%, white);
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 220px;
+  font-family: sans-serif;
+}
+
+.card button {
+  background: currentColor;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+/* These would be the variants */
+.green {
+  color: green;
+}
+
+.pink {
+  color: rgb(237, 79, 105);
+}
