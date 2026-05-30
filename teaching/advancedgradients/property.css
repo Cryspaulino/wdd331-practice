@@ -1,0 +1,62 @@
+/* If the background property changes, try to animate the change smoothly instead of changing it instantly.
+
+In syntax we can use: Angle, Length, Color or Number
+Inherits means if children get the value */
+
+/* @property --myangle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.boxproperty {
+  width: 500px;
+  --myangle: 20deg;
+
+  background: linear-gradient(var(--myangle), red, blue);
+} */
+
+
+/* @property --mainColor {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: red;
+}
+
+section {
+  border: 2px solid black;
+}
+
+.boxproperty {
+  align-content: center;
+  width: 500px;
+  --mainColor: blue;
+
+  background: var(--mainColor);
+} */
+
+/* @property --size {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 50px;
+}
+
+.boxproperty {
+  --size: 420px;
+
+  width: var(--size);
+  height: var(--size);
+} */
+
+@property --number {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}
+
+.boxproperty {
+  width: 400px;
+  --number: 2;
+
+  transform: scale(var(--number));
+}

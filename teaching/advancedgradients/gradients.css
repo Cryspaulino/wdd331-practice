@@ -1,0 +1,98 @@
+/* Linear: Straight lines
+Radial: From a point going out
+Conic: Around the center (like a pizza) */
+
+body{
+    margin: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: grid;
+    gap: 20px;
+    width: 90%;
+}
+
+.boxproperty{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.box{
+    height: 140px;
+    border:2px solid black;
+}
+
+/* LINEAR: background-size controls stripe width*/
+.stripes{
+    background:
+        repeating-linear-gradient(
+            30deg,
+            #ff4d4d 9px 15px,
+            #ffd24d 10px 20px
+        );
+
+    background-size: 60px 40px;
+}
+
+/* RADIAL: background-size controls dot spacing*/
+.dots{
+    background:
+        repeating-radial-gradient(
+            circle,
+            #1d87aa 5px 10px,
+            transparent 15px 20px
+        );
+
+    background-size: 65px 80px;
+    background-color: #222;
+}
+
+/* CONIC: background-size controls checker density*/
+.checkers{
+    background:
+        repeating-conic-gradient(
+            from 80deg,
+            #7cff7c 20deg 45deg,
+            #222 40deg 50deg
+        );
+
+    background-size: 80px 80px;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ANIMATED GRADIENT USING @property */
+@property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.animated{
+    --angle:0deg;
+
+    background:
+        linear-gradient(
+            var(--angle),
+            rgb(146, 106, 146),
+            lightblue,
+            rgb(240, 240, 133)
+        );
+
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        --angle:360deg;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animated {
+        animation: none;
+    }
+}
