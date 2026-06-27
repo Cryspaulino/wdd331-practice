@@ -1,0 +1,20 @@
+body {
+  display: grid;
+  font-family: var(--font-family-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  /* line-height: var(--space-lg); */
+
+  :is(h1, h2) {
+    font-family: var(--font-family-headings);
+    /* padding: var(--space-small); */
+  }
+
+  section {
+    margin-bottom: calc(var(--space-large) + 10px);
+  }
+
+  footer {
+    background-color: var(--color-primary);
+  }
+}

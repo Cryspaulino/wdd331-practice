@@ -62,8 +62,8 @@ body {
       padding: var(--padding);
       border-radius: var(--radius-lg);
       box-shadow:
-        3px 6px 8px var(--color-accent),
-        3px 6px 8px rgb(192, 192, 192);
+        1px 3px 5px var(--color-accent),
+        1px 3px 5px rgba(248, 240, 228, 0.808);
 
       .card-tag {
         font-size: var(--font-size-sm);

@@ -1,0 +1,35 @@
+/* Balance = headings, Pretty = paragraphs, Initial-letter = drop cap, Line-clamp = cut text, ch = width, lh = spacing. */
+
+*{
+    margin: 20px;
+}
+
+h1 {
+    /* Make haeding lines more even */
+  text-wrap: balance;
+}
+
+.intro::first-letter {
+    /* Turn first letter into drop cap (bigger) */
+    initial-letter: 2;
+}
+
+.card {
+  /* text-wrap: pretty; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* Cutting text off after x amount of lines */
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+p {
+    /* Separating into lines  */
+    /* THere is a comfortable range between 45 and 75ch */
+  max-width: 90ch;
+}
+
+p {
+    /* Spacing after the element like we would see in a word document */
+  margin-bottom: 3rlh;
+}

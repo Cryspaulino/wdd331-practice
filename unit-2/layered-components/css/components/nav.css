@@ -1,0 +1,31 @@
+nav {
+  background-color: var(--color-primary);
+  padding: var(--space-small);
+  margin-left: var(--space-small);
+  
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: var(--color-text);
+
+    /* :is([aria-current]) {
+      color: var(--color-accent);
+      } */
+  }
+
+  :not([aria-current]) {
+    text-decoration: none;
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
