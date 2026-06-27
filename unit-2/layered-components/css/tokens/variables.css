@@ -1,0 +1,12 @@
+:root {
+  --space-small: .5rem;
+  --space-medium: 1.5rem;
+  --space-large: 1.8rem;
+
+  --font-family-headings: Georgia, 'Times New Roman', Times, serif;
+  --font-family-body: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  --border-radius: 15px;
+
+  --shadow: 1px 3px 5px lightgray; 
+}

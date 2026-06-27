@@ -1,0 +1,18 @@
+.temples li {
+  margin-left: var(--space-small);
+  padding: var(--space-small);
+}
+
+.temple-status{
+   border-radius: calc(var(--border-radius) - 5px);
+   padding: calc(var(--space-small) - 7px);
+
+   &:where(.open) {
+       background-color: var(--color-accent);
+   }
+
+   &:where(.construction) {
+      background-color: var(--color-primary);
+   }
+
+}
