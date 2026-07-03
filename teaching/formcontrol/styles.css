@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 300px;
+}
+
+/* input[type="text"] {
+    appearance: none;
+} */

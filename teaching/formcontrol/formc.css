@@ -1,0 +1,39 @@
+:root {
+  --color: #2563eb;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 300px;
+}
+
+input,
+select {
+  padding: 0.7rem;
+  font: inherit;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  caret-color: var(--color);
+}
+
+select {
+  appearance: none;
+  background: url("https://www.magicmurals.com/media/catalog/product/cache/af1e2a1566fa2dbb552605e8822354b7/f/o/fot-pat90131244-48.jpg")
+    no-repeat right 0.8rem center;
+  padding-right: 2rem;
+}
+
+input[type="range"] {
+  accent-color: var(--color);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color);
+  outline-offset: 2px;
+}
