@@ -1,4 +1,11 @@
 :root {
+  --shadow-sm: 0 1px 2px oklch(0.2 0 0 / 0.1), 
+               0 2px 4px oklch(0.2 0 0 / 0.06);
+  --shadow-md:
+    0 2px 4px var(--color-link-hover), 
+    0 6px 12px oklch(0.2 0 0 / 0.07),
+    0 16px 32px oklch(0.2 0 0 / 0.05);
+
   --space-small: var(--spacing-sm);
   --space-medium: var(--spacing-md);
   --space-large: var(--spacing-lg);
@@ -11,37 +18,29 @@
 
   --border-radius: var(--radius-md);
 
-  /* --shadow: 1px 3px 5px lightgray;  */
-
   --padding: clamp(1.5rem, 4vw, 2.5rem);
 
+  /* Set up */
+  --font-family-sans: system-ui, sans-serif;
+  --font-family-mono: monospace;
+  --font-size-sm: 1.4rem;
+  --font-size-md: 1.6rem;
+  --font-size-lg: 1.8rem;
 
-    /* Typography */
-    --font-family-sans: system-ui, sans-serif;
-    --font-family-mono: monospace;
-    --font-size-sm: 1.4rem;
-    --font-size-md: 1.6rem;
-    --font-size-lg: 1.8rem;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
 
-    /* Spacing */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
 
-    /* Radii */
-    --radius-sm: 4px;
-    --radius-md: 6px;
-    --radius-lg: 8px;
+  --transition-base: 0.2s ease;
 
-    /* Transitions */
-    --transition-base: 0.2s ease;
+  --icon-size-sm: 24px;
+  --icon-size-md: 32px;
 
-    /* Icons */
-    --icon-size-sm: 24px;
-    --icon-size-md: 32px;
-
-    /* Focus */
-    --outline-width: 2px;
+  --outline-width: 2px;
 }

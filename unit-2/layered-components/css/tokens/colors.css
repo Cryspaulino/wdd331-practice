@@ -50,7 +50,7 @@ html {
   /* ---- Semantic tokens ---- */
   --color-bg: light-dark(var(--seed-bg), oklch(0.18 0.02 260));
   --color-surface: light-dark(var(--seed-surface), oklch(0.22 0.03 260));
-  --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 260));
+  --color-text: light-dark(var(--seed-text), oklch(96.696% 0.00298 264.792));
   --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 250));
   --color-accent: light-dark(var(--seed-accent), oklch(45.51% 0.07138 161.585));
   --color-accent-hover: light-dark(var(--seed-accent-hover), oklch(0.68 0.18 240)
@@ -64,11 +64,9 @@ html {
   /* Tint the native checkboxes, radios, and range sliders */
   accent-color: var(--color-accent);
 
-  /* ---- Header chrome ---- */
   --header-bg: var(--color-accent);
   --header-text: light-dark(#ffffff, #f0f4f8);
 
-  /* ---- Theme toggle (consumed by theme-toggle.css) ---- */
   --theme-toggle-bg: color-mix(
     in srgb,
     var(--header-text) 20%,
@@ -90,8 +88,5 @@ html {
     var(--header-bg)
   );
 
-  /* ---- Shadows ---- */
   --shadow-color: light-dark(rgb(0 0 0 / 0.09), rgb(0 0 0 / 0.28));
-  --shadow-sm: 0 1px 2px 0 var(--shadow-color);
-  --shadow-md: 0 1px 3px 0 var(--shadow-color);
 }
