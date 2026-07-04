@@ -1,0 +1,43 @@
+body {
+  font-family: Arial;
+  padding: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 60px;
+  height: 60px;
+  background: tomato;
+  color: white;
+  display: grid;
+  place-items: center;
+
+  animation: enter 0.8s both;
+  animation-delay: calc(var(--index) * 500ms);
+}
+
+.blueone {
+  background-color: lightblue;
+  animation-fill-mode: backwards;
+}
+
+.bug .card {
+  animation-fill-mode: none;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
