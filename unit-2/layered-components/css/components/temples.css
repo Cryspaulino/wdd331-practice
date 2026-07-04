@@ -8,11 +8,11 @@
    padding: calc(var(--space-small) - 7px);
 
    &:where(.open) {
-       background-color: var(--color-accent);
+       background-color: var(--color-primary);
    }
 
    &:where(.construction) {
-      background-color: var(--color-primary);
+      background-color: var(--color-link-hover);
    }
 
 }
