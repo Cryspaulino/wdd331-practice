@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  padding: 30px;
+}
+
+.track {
+  width: 600px;
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;
+}
+
+.ball {
+  width: 25px;
+  height: 25px;
+  background: steelblue;
+  border-radius: 50%;
+  animation: move 8s infinite alternate;
+}
+
+.one {
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.two {
+  animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes move {
+  to {
+    transform: translateX(550px);
+  }
+}
