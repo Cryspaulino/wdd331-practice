@@ -2,6 +2,11 @@ nav {
   background-color: var(--color-primary);
   padding: var(--space-small);
   margin-left: var(--space-small);
+
+  &.home {
+    display: flex;
+    justify-content: space-between;
+  }
   
   ul{
     display: flex;
@@ -25,7 +30,7 @@ nav {
   :not([aria-current]) {
     text-decoration: none;
     &:hover {
-      color: var(--color-accent);
+      color: var(--accent-600);
     }
   }
 }
