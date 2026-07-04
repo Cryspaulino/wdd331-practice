@@ -25,3 +25,7 @@
     white-space: nowrap;
     border: 0;
 }
+
+.assignments, .intro {
+    margin: var(--space-medium);
+}

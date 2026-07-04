@@ -14,6 +14,7 @@
 
 .card{
   margin: clamp(var(--space-small), 5vw, var(--space-large));
+  box-shadow: var(--shadow-sm);
 }
 
 .cards h3 {

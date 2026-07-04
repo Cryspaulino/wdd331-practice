@@ -1,0 +1,134 @@
+.hero {
+  position: relative;
+  max-width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    filter: brightness(0.6);
+  }
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 0.01rem;
+  left: 0;
+  right: 0;
+
+  background:
+    radial-gradient(ellipse, var(--color-accent) 60%, var(--color-link-hover)),
+    url("") center / cover;
+
+  h1 {
+    text-shadow: var(--shadow-md);
+  }
+  p {
+    text-shadow: var(--shadow-sm);
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.card-section {
+  margin-top: var(--space-large);
+
+  .animated {
+    padding: calc(var(--space-large) * 2);
+    --angle: 0deg;
+
+    background: linear-gradient(
+      var(--angle),
+      rgb(from var(--color-primary) r g b / 0.7),
+      rgb(from var(--color-background) r g b / 1),
+      rgb(from var(--color-primary) r g b / 0.7)
+    );
+
+    animation: spin 10s linear infinite;
+  }
+
+  .cards {
+    display: flex;
+
+    .card {
+      background-color: var(--color-background);
+
+      box-shadow: var(--shadow-sm);
+
+      &:hover {
+        box-shadow: var(--shadow-md);
+
+        img {
+          filter: invert(0%);
+        }
+      }
+
+      img {
+        width: 300px;
+        filter: invert(30%);
+      }
+    }
+  }
+}
+
+.glass-section {
+  position: relative;
+
+  .glass-bg-image {
+    display: block;
+  }
+
+  .glass-panel {
+    position: absolute;
+    inset: 5rem;
+    padding: var(--space-medium);
+    background-color: light-dark(var(--accent-300), var(--accent-300));
+    backdrop-filter: blur(12px) saturate(1.4);
+    color: black;
+  }
+}
+
+.icon-section {
+  img {
+    color: var(--color-accent);
+    filter: drop-shadow(0px 0px 1px currentColor)
+      drop-shadow(0 0 1px currentColor) drop-shadow(0 0 1px currentColor)
+      drop-shadow(0 0 1px currentColor) drop-shadow(0 0 1px currentColor);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass-panel {
+    backdrop-filter: none;
+    background: light-dark(white, var(--color-text-muted));
+  }
+
+  .animated {
+    animation: none;
+  }
+}
+
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.hero-content,
+.card-section,
+.glass-section,
+.icon-section {
+  justify-items: center;
+  margin-bottom: calc(var(--space-large) * 2);
+}
+
+@media (max-width: 900px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+    }
+}
