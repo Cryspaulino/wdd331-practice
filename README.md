@@ -18,6 +18,7 @@ every push to main.
 - [Layered Components](unit-2/layered-components/index.html)
 - [Tokenized Color System] () At this point, the page should support dark mode, the color tokens live in the css/tokens/colors.css file, where we have a root and other queries to specify the new scheme.
 - [Visual Effects](unit-3/visual-effects/index.html) Here I explored different animations/effects in images and elements in the page.
+- [Meaningful Motion] (unit-6/motion/index.html)
 
 
 
