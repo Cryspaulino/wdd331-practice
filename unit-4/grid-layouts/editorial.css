@@ -1,0 +1,11 @@
+.editorial-page .layout {
+    display: grid;
+    grid-template-areas:
+        "header header";
+    }
+
+@media (min-width: 799px) {
+    .editorial-page .layout {
+        display: grid;
+    }
+}

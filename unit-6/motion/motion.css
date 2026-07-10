@@ -1,7 +1,11 @@
 @media (prefers-reduced-motion: no-preference) {
   nav {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    font-family: var(--font-family-mono);
+    font-size: calc(var(--font-size-sm) - .4rem);
+    /* justify-content: space-between; */
   }
 
   nav a {
@@ -95,6 +99,7 @@
   }
 
   .card {
+    padding: var(--padding);
     transition:
       transform 220ms ease,
       box-shadow 220ms ease;
