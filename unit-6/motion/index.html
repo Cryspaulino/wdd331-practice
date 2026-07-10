@@ -7,15 +7,67 @@
     <title>Activity Dashboard</title>
     <link rel="stylesheet" href="/wdd331-practice/dist/styles.css">
     <link rel="stylesheet" href="./motion.css">
-    <link rel="stylesheet" href="/dist/styles.css">
+    <!-- <link rel="stylesheet" href="/dist/styles.css"> -->
 </head>
 
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
+        <!-- fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" -->
+
+        <symbol id="icon-home" viewBox="0 0 24 24">
+            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+            <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        </symbol>
+        <symbol id="icon-new" viewBox="0 0 24 24">
+            <path
+                d="M11.35 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v5.35" />
+            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+            <path d="M14 19h6" />
+            <path d="M17 16v6" />
+        </symbol>
+        <symbol id="icon-archive" viewBox="0 0 24 24">
+            <rect width="20" height="5" x="2" y="3" rx="1" />
+            <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" />
+            <path d="M10 12h4" />
+        </symbol>
+        <symbol id="icon-export" viewBox="0 0 24 24">
+            <path
+                d="M2 9V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1" />
+            <path d="M2 13h10" />
+            <path d="m9 16 3-3-3-3" />
+        </symbol>
+        <symbol id="icon-pointer" viewBox="0 0 24 24">
+            <path d="m9 18 6-6-6-6" />
+        </symbol>
+        <symbol id="icon-progress" viewBox="0 0 24 24">
+            <path d="M12 2v4" />
+            <path d="m16.2 7.8 2.9-2.9" />
+            <path d="M18 12h4" />
+            <path d="m16.2 16.2 2.9 2.9" />
+            <path d="M12 18v4" />
+            <path d="m4.9 19.1 2.9-2.9" />
+            <path d="M2 12h4" />
+            <path d="m4.9 4.9 2.9 2.9" />
+        </symbol>
+        <symbol id="icon-complete" viewBox="0 0 24 24">
+            <path d="M20 6 9 17l-5-5" />
+        </symbol>
+        <symbol id="icon-next" viewBox="0 0 24 24">
+            <path d="m7 18 6-6-6-6" />
+            <path d="M17 6v12" />
+        </symbol>
+    </svg>
 
     <header class="site-header">
         <span class="site-name">portfolio</span>
         <nav>
-            <a href="../../index.html">Home</a>
+            <a href="../../index.html" aria-label="Go to Home Page">
+                <svg class="icon home-icon" aria-hidden="true" focusable="false" width="28" height="28" fill="var(--color-link-hover)"
+                    stroke="currentColor">
+                    <use href="#icon-home" />
+                </svg>
+            </a>
             <a href="#">Projects</a>
             <a href="#">About</a>
             <a href="#" class="nav-cta">Contact</a>
@@ -36,17 +88,36 @@
         </section>
 
         <section class="actions">
-            <button class="btn btn-primary" type="button">New Project</button>
-            <button class="btn btn-secondary" type="button">View Archive</button>
-            <button class="btn btn-ghost" type="button">Export Data</button>
+            <button class="btn btn-primary" type="button">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                    <use href='#icon-new'></use>
+                </svg>
+                New Project</button>
+            <button class="btn btn-secondary" type="button">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                    <use href='#icon-archive'></use>
+                </svg>
+                View Archive</button>
+            <button class="btn btn-ghost" type="button">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                    <use href='#icon-export'></use>
+                </svg>
+                Export Data</button>
         </section>
 
         <section class="card-grid">
 
             <article class="card">
                 <div class="card-header">
-                    <h2>Design Tokens</h2>
-                    <span class="card-tag">Complete</span>
+                    <h2>
+                        <!-- <svg aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="black">
+                            <use href='#icon-pointer'></use>
+                        </svg> -->
+                        Design Tokens
+                    </h2>
+                    <span class="card-tag"><svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                            <use href='#icon-complete'></use>
+                        </svg>Complete</span>
                 </div>
                 <p>Color, spacing, and type tokens organized into a token-first architecture with dark mode support.</p>
                 <a href="#" class="card-link">View work &rarr;</a>
@@ -55,7 +126,11 @@
             <article class="card">
                 <div class="card-header">
                     <h2>Grid Layouts</h2>
-                    <span class="card-tag">Complete</span>
+                    <span class="card-tag">
+                        <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                            <use href='#icon-complete'></use>
+                        </svg>
+                        Complete</span>
                 </div>
                 <p>Editorial layout with named grid areas and a responsive auto-fit card grid that adapts without
                     breakpoints.</p>
@@ -65,7 +140,11 @@
             <article class="card">
                 <div class="card-header">
                     <h2>Type Scale</h2>
-                    <span class="card-tag">Complete</span>
+                    <span class="card-tag">
+                        <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                            <use href='#icon-complete'></use>
+                        </svg>
+                        Complete</span>
                 </div>
                 <p>Fluid typography using clamp() and a modular scale with web fonts loaded for performance.</p>
                 <a href="#" class="card-link">View work &rarr;</a>
@@ -74,7 +153,10 @@
             <article class="card">
                 <div class="card-header">
                     <h2>Motion</h2>
-                    <span class="card-tag card-tag--active">In Progress</span>
+                    <span class="card-tag card-tag--active"><svg class="icon" aria-hidden="true" focusable="false" width="20"
+                            height="20" fill='none' stroke="currentColor">
+                            <use href='#icon-progress'></use>
+                        </svg> In Progress</span>
                 </div>
                 <p>Transitions, keyframe animations, and reduced-motion support applied across the portfolio.</p>
                 <a href="#" class="card-link">View work &rarr;</a>
@@ -83,7 +165,10 @@
             <article class="card">
                 <div class="card-header">
                     <h2>SVG Icons</h2>
-                    <span class="card-tag card-tag--pending">Up Next</span>
+                    <span class="card-tag card-tag--pending">
+                        <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                            <use href='#icon-next'></use>
+                        </svg> Up Next</span>
                 </div>
                 <p>Accessible SVG sprite system using symbol and use with currentColor theming.</p>
                 <a href="#" class="card-link">View work &rarr;</a>
@@ -92,7 +177,10 @@
             <article class="card">
                 <div class="card-header">
                     <h2>Portfolio</h2>
-                    <span class="card-tag card-tag--pending">Up Next</span>
+                    <span class="card-tag card-tag--pending">
+                        <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none' stroke="currentColor">
+                            <use href='#icon-next'></use>
+                        </svg> Up Next</span>
                 </div>
                 <p>Capstone project showcasing the full toolkit built throughout this course.</p>
                 <a href="#" class="card-link">View work &rarr;</a>

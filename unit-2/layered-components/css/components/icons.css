@@ -1,0 +1,14 @@
+.icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -0.125em;
+    flex-shrink: 0;
+    stroke-width: 2px;
+
+    &.home-icon{
+        width: 28px;
+        height: 28px;
+        stroke-width: 1px;
+    }
+}
