@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  color: steelblue;
+  padding: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.small {
+  width: 60px;
+}
+
+.large {
+  width: 120px;
+}
+
+svg {
+  border: 1px solid #ccc;
+}
+
+img {
+    width: 300px;
+}

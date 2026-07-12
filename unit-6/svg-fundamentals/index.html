@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Fundamentals Demo</title>
+    <link rel="stylesheet" href="svg-fundamentals.css">
+</head>
+
+<body>
+
+    <h1>SVG Fundamentals</h1>
+
+    <p>Same viewBox, different rendered sizes.</p>
+
+    <div class="icons">
+        <img src="./coordinate.png" alt="coordinates">
+        <svg class="small" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M12 4 L20 10 L4 10 Z"></path>
+
+                <rect x="6" y="10" width="12" height="10"></rect>
+
+                <rect x="10" y="14" width="4" height="6"></rect>
+
+                <circle cx="3.5" cy="4" r="1"></circle>
+
+            </g>
+        </svg>
+        <!-- ViewBox = minX minY width height -->
+        <svg class="large" viewBox="0 0 24 24">
+            <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+                <path d="M12 4 L20 10 L4 10 Z"></path>
+                <rect x="6" y="10" width="12" height="10"></rect>
+                <rect x="10" y="14" width="4" height="6"></rect>
+                <circle cx="3.5" cy="4" r="2"></circle>
+                <!-- <polyline points="2,20 12,4 22,20"></polyline> -->
+                <!-- <polygon points="12,2 22,20 2,20"></polygon> -->
+            </g>
+        </svg>
+    </div>
+
+    <p>
+        Path:
+        <code>M12 4 L20 10 L4 10 Z</code><br>
+        M = move, L = line, Z = close.
+    </p>
+
+</body>
+
+</html>
