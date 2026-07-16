@@ -39,3 +39,9 @@ main {
     margin-inline: auto;
     padding: var(--space-lg, 2rem) var(--space-md, 1rem);
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+}

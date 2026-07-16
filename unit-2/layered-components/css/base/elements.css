@@ -16,5 +16,8 @@ body {
 
   footer {
     background-color: var(--color-primary);
+    position: absolute;
+    bottom: 0;
+    height: 70px;
   }
 }
