@@ -1,11 +1,31 @@
 .editorial-page .layout {
-    display: grid;
-    grid-template-areas:
-        "header header";
-    }
+  margin: var(--space-large);
+  display: grid;
+  grid-template-areas:
+    "main"
+    "sidebar";
+  gap: var(--space-medium);
 
-@media (min-width: 799px) {
-    .editorial-page .layout {
-        display: grid;
+  main {
+    grid-area: main;
+    margin: var(--space-large);
+
+    p {
+      text-align: justify;
     }
+  }
+
+  aside {
+    margin-left: var(--space-large);
+    padding: var(--space-large);
+    grid-area: sidebar;
+    background-color: var(--color-surface);
+  }
+}
+
+@media (min-width: 699px) {
+  .editorial-page .layout {
+    grid-template-areas: "main sidebar";
+    grid-template-columns: 2fr 1fr;
+  }
 }
