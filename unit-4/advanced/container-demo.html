@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Demo</title>
+    <link rel="stylesheet" href="/wdd331-practice/dist/styles.css">
+    <!-- <link rel="stylesheet" href="/dist/styles.css"> -->
+    <link rel="stylesheet" href="./container-demo.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">portfolio</a>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="./cards.html">Articles</a>
+            <a href="#">About</a>
+
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <article class="card siar">
+                <img src="../../images/grid.jpg" alt="Grid areas">
+                <div>
+                    <h2>Grid Areas</h2>
+                    <p>
+                        Define your layout with readable area names instead of
+                        column and row numbers.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="main-area">
+            <article class="card">
+                <img src="../../images/flex.png" alt="Flexbox patterns">
+                <div>
+                    <h2>Flexbox Patterns</h2>
+                    <p>
+                        Use content-driven sizing when items should determine
+                        their own width.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+</body>
+
+</html>

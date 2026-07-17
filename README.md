@@ -19,6 +19,8 @@ every push to main.
 - [Tokenized Color System] () At this point, the page should support dark mode, the color tokens live in the css/tokens/colors.css file, where we have a root and other queries to specify the new scheme.
 - [Visual Effects](unit-3/visual-effects/index.html) Here I explored different animations/effects in images and elements in the page.
 - [Editorial Grid and Responsive Card Grid] (unit-4/grid-layout/editorial.html) (unit-4/grid-layout/cards.html) Here I applied grid with template areas and aspect ratio.
+- [Subgrid, Container Queries, and Sticky
+] (unit-4/advanced/sticky-demo.html) This one contains the container demo, the sticky demo and the updates to the card grid topic.
 - [Meaningful Motion] (unit-6/motion/index.html)
 - [Accessible SVG Icon System] (unit-6/motion/index.html) Adding icons to different elements on the page.
 
