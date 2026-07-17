@@ -1,0 +1,43 @@
+main {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-medium);
+  box-shadow: var(--shadow-md);
+
+  img {
+    width: 200px;
+    max-width: 100%;
+  }
+}
+
+.sidebar,
+.main-area {
+  container-type: inline-size;
+}
+
+.main-area {
+  width: 700px;
+}
+
+.sidebar {
+  width: 280px;
+}
+
+@container (min-width: 500px) {
+  .card {
+    padding: var(--space-medium);
+    flex-direction: row;
+
+    img {
+      width: 220px;
+    }
+
+    div {
+      flex: 1;
+    }
+  }
+}

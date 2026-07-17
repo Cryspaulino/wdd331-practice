@@ -1,9 +1,14 @@
+header {
+  background-color: var(--color-primary);
+}
+
 main {
   max-width: 100%;
 }
 
 .card-grid {
   display: grid;
+  gap: var(--space-large);
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
 
   .card {
@@ -38,5 +43,20 @@ main {
       aspect-ratio: 16 / 9;
       object-fit: cover;
     }
+  }
+}
+
+@supports (grid-template-rows: subgrid) {
+  .card-grid {
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: var(--space-large);
+    align-items: stretch;
+  }
+
+  .card {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    padding: var(--space-large);
   }
 }

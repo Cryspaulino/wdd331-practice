@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Demo</title>
+    <link rel="stylesheet" href="/wdd331-practice/dist/styles.css">
+    <!-- <link rel="stylesheet" href="/dist/styles.css"> -->
+    <link rel="stylesheet" href="./sticky-demo.css">
+    <script src="../../unit-2/layered-components/js/theme-preference.js"></script>
+</head>
+
+<body>
+    <nav class="home">
+        <h1>Sticky Demo</h1>
+        <details class="theme-menu">
+            <summary class="theme-control">
+                <span class="visually-hidden">Color scheme</span>
+            </summary>
+            <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                <label class="theme-control theme-pick" data-theme-pick="light">
+                    <input name="theme-preference" type="radio" value="light">
+                    <span aria-hidden="true">&#9788;&#65039;</span>
+                    <span class="visually-hidden">Light</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="system">
+                    <input name="theme-preference" type="radio" value="system" checked>
+                    <span aria-hidden="true">&#9881;&#65039;</span>
+                    <span class="visually-hidden">System default</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="dark">
+                    <input name="theme-preference" type="radio" value="dark">
+                    <span aria-hidden="true">&#127766;</span>
+                    <span class="visually-hidden">Dark</span>
+                </label>
+            </div>
+        </details>
+    </nav>
+    <a href="../../index.html">Home</a>
+    <br>
+
+    <div class="bug">
+        <h1 class="page-title">Position: Sticky</h1>
+
+        <div class="description-details card">
+            <h2>Description</h2>
+            <p>The flex sizing model works in three stages: flex-basis sets the starting size, flex-grow distributes
+                positive free space, and flex-shrink absorbs negative free space. The default min-width: auto on flex
+                items
+                prevents shrinking past content size, which causes overflow when content is long; min-width: 0 is the
+                fix.
+            </p> <br>
+            <p>Sticky positioning requires both position: sticky and a threshold value (top, bottom, left, or right).
+                Any
+                ancestor with a non-visible overflow value becomes the sticky element's scroll container; if that
+                ancestor
+                does not scroll, the sticky behavior silently fails.
+            </p>
+        </div>
+
+        <div class="assignments">
+            <div class="first-data card">
+                <h2>Assignments</h2>
+                <ul>
+                    <a href="unit-1/custom-properties/index.html">Custom Properties and Nesting </a> <br> <br>
+                    <a href="unit-2/layered-components/index.html">Layered Components </a> <br> <br>
+                    <a href="./index.html">Architecture and Build </a> <br>
+                    <a href="./unit-3/visual-effects/index.html">Visual Effects</a> <br> <br>
+                    <a href="./unit-4/grid-layouts/editorial.html">Editorial Grid and Responsive Card Grid</a> <br>
+                    <a href="./unit-4/grid-layouts/cards.html">Cards and Aspect Ratio</a> <br> <br>
+                    <a href="./unit-4/advanced/container-demo.html">Container Demo</a> <br>
+                    <a href="./unit-4/advanced/sticky-demo.html">Sticky Demo</a> <br> <br>
+                    <a href="./unit-6/motion/index.html">Meaningful Motion</a> <br>
+                    <a href="./unit-6/motion/index.html">Accessible SVG Icon System</a> <br> <br>
+                </ul>
+            </div>
+            <div class="second-data card">
+                <h2>Teaching Topics</h2>
+                <ul>
+                    <a href="./teaching/bootstrap/bootstrap.html"> Bootstrap </a> <br> <br>
+                    <a href="./teaching/custommedia/home.html"> Custom-Media </a> <br> <br>
+                    <a href="./teaching/currentcolor/index.html"> Current Color Patterns</a> <br> <br>
+                    <a href="./teaching/advancedgradients/index.html"> Advanced Gradients </a> <br> <br>
+                    <a href="./teaching/ratioandfit/index.html"> Aspect Ratio and Object Fit </a> <br> <br>
+                    <img id="demoImage" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200"
+                        alt="Landscape" />
+                    <a href="./teaching/carousel/index.html"> Scroll Snap Carousel </a> <br> <br>
+                    <img src="https://imgs.search.brave.com/8gfZ0PXCWT82ptQmVq6_yeGcienQgBaq5nPq-P3u6WE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXQuY29t/L3cvZnVsbC83LzIv/Mi8yMTEzMjcxLTE5/MjB4MTIwMC1kZXNr/dG9wLWhkLW1pbmlt/YWxpc3Qtd2FsbHBh/cGVyLWltYWdlLmpw/Zw"
+                        alt="placeholder1">
+                    <img src="https://imgs.search.brave.com/f3Zf2y_ybi9vo7XELOZaKO0AkdMV_xdyv2pOVT2zhzw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9nYWJy/aWVsbGFlaXNlbmhh/cnQtNzk3Y3VtYmVy/bGFuZHJkbmUtMDgy/MDIxLW1tcC0xMDg2/NjktNjczNjVlMDNh/N2M3ZC5qcGc_Y3Jv/cD0xeHc6MC45OTg5/NDg0NzUyODkxNjkz/eGg7Y2VudGVyLHRv/cA"
+                        alt="livingroom2">
+                    <a href="./teaching/textandfonts/index.html"> Text Properties and Font Units </a> <br> <br>
+                    <a href="./teaching/formcontrol/index.html"> Form Controls </a> <br> <br>
+                    <a href="./teaching/animationchoreo/index.html">Animation Choreography and Custom Easing</a>
+                    <a href="./unit-6/svg-fundamentals/index.html">SVG Fundamentals and viewBox</a>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
