@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Inconsolata:wght@200..900&family=Margarine&display=swap");
+
 :root {
-  --shadow-sm: 0 1px 2px oklch(0.2 0 0 / 0.1), 
-               0 2px 4px oklch(0.2 0 0 / 0.06);
+  --shadow-sm: 0 1px 2px oklch(0.2 0 0 / 0.1), 0 2px 4px oklch(0.2 0 0 / 0.06);
   --shadow-md:
-    0 2px 4px var(--color-link-hover), 
-    0 6px 12px oklch(0.2 0 0 / 0.07),
+    0 2px 4px var(--color-link-hover), 0 6px 12px oklch(0.2 0 0 / 0.07),
     0 16px 32px oklch(0.2 0 0 / 0.05);
 
   --space-small: var(--spacing-sm);
@@ -13,20 +13,34 @@
   /* --font-family-headings: Georgia, 'Times New Roman', Times, serif;
   --font-family-body: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
 
-  --font-family-body: var(--font-family-sans);
-  --font-family-headings: var(--font-family-mono);
-
+  --font-family-body: "Inconsolata", var(--font-family-sans);
+  --font-family-headings: "Archivo Narrow", var(--font-family-mono);
+  --font-family-accent: "Margarine", var(--font-family-body);
   --border-radius: var(--radius-md);
 
   --padding: clamp(1.5rem, 4vw, 2.5rem);
 
   /* Set up */
+  /* Ratio is 1.25, major third, width 300-1200 */
   --font-family-sans: system-ui, sans-serif;
   --font-family-mono: monospace;
-  --font-size-xs: 1rem;
-  --font-size-sm: 1.4rem;
-  --font-size-md: 1.6rem;
-  --font-size-lg: 1.8rem;
+  --font-size-xs: 0.6rem;
+  --font-size-sm: 0.8rem;
+  --font-size-md: 1rem;
+  --font-size-lg: clamp(1.25rem, 0.81rem + 2.17vw, 2.5rem);
+  --font-size-xl: clamp(1.5259rem, 1.0173rem + 2.7127vw, 3.0518rem);
+  --font-size-2xl: clamp(1.9073rem, 1.2716rem + 3.3908vw, 3.8147rem);
+
+  --line-height-open: 1.6;
+  --line-height-tight: 1.2;
+  --line-height-display: 1.1;
+
+  --font-size-caption: var(--font-size-xs);
+  --font-size-notes: var(--font-size-sm);
+  --font-size-body: var(--font-size-md);
+  --font-size-heading-sm: var(--font-size-lg);
+  --font-size-heading-md: var(--font-size-xl);
+  --font-size-heading-lg: var(--font-size-2xl);
 
   --spacing-xs: 4px;
   --spacing-sm: 8px;

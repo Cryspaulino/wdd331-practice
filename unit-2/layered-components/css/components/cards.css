@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: clamp(var(--space-small), 5vw, var(--space-large));
-  
+
   article {
     padding: var(--space-medium);
   }
@@ -12,14 +12,17 @@
   padding-top: calc(var(--space-small) - 10px);
 }
 
-.card{
+.card {
   margin: clamp(var(--space-small), 5vw, var(--space-large));
   box-shadow: var(--shadow-sm);
 }
 
-.cards h3 {
-  font-size: calc(var());
-  line-height: clamp(var(--space-small), 80%, var(--space-large));
+.cards h3,
+h2 {
+  font-size: var(--font-size-heading-sm);
+  line-height: var(--line-height-open);
+
+  /* line-height: clamp(var(--space-small), 80%, var(--space-large)); */
   /*    line-height: clamp(var(--space-small), 80%, var(--space-large));
  */
 }

@@ -58,8 +58,8 @@ details.theme-menu {
         min-height: calc(var(--icon-size-md) + var(--spacing-md) - 10px);
         margin: 0;
         padding: 0;
-        font-size: var(--icon-size-sm);
-        line-height: 1;
+        font-size: var(--font-size-body);
+        line-height: var(--line-height-tight);
         color: var(--header-text);
         background-color: var(--theme-toggle-bg);
         border: 1px solid var(--theme-toggle-border);

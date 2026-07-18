@@ -36,11 +36,11 @@
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 2rem;
-    --font-body: system-ui, -apple-system, sans-serif;
+    /* --font-body: system-ui, -apple-system, sans-serif; */
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--font-family-body);
     color: var(--color-text);
     background-color: var(--color-bg);
     line-height: 1.6;

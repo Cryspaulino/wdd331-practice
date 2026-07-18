@@ -3,8 +3,11 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    font-family: var(--font-family-mono);
-    font-size: calc(var(--font-size-sm) - .4rem);
+    font-family: var(--font-family-accent);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-open);
+
+    /* font-size: calc(var(--font-size-heading-sm) - 1rem); */
     /* justify-content: space-between; */
   }
 
