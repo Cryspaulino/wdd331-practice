@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Grid</title>
     <link rel="stylesheet" href="/wdd331-practice/dist/styles.css">
-    <link rel="stylesheet" href="/dist/styles.css">
+    <!-- <link rel="stylesheet" href="/dist/styles.css"> -->
     <link rel="stylesheet" href="./cards.css">
 </head>
 
@@ -16,6 +16,28 @@
         <nav>
             <a href="../../index.html">Home</a>
             <a href="./editorial.html">Editorial</a>
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
         </nav>
         <h1>Featured Articles</h1>
         <p>Exploring modern CSS layout techniques.</p>
@@ -28,7 +50,7 @@
                 <!-- <div aria-hidden="true"></div> -->
                 <img src="../../images/grid.jpg" alt="Grid areas">
                 <div>
-                    <h2>NResponsive TracksaResponsive Tracksmed GResponsive Tracksrid ArResponsive Trackseas</h2>
+                    <h2>Named Grid Areas</h2>
                     <p>
                         Define your layout with readable area names instead of
                         column and row numbers.

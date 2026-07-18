@@ -1,4 +1,7 @@
 nav {
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-open);
   background-color: var(--color-primary);
   padding: var(--space-small);
   padding-left: var(--space-small);
@@ -32,5 +35,9 @@ nav {
     &:hover {
       color: var(--accent-600);
     }
+  }
+
+  details {
+    float: inline-end;
   }
 }

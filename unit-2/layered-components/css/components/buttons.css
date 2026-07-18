@@ -10,7 +10,8 @@ button:focus-visible {
 button {
   padding: var(--space-small);
   margin: var(--space-small);
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-accent);
+  /* font-size: var(--font-size-heading-lg); */
   border-radius: var(--border-radius);
 
   &:hover {
