@@ -8,14 +8,59 @@
     <script src="js/theme-preference.js"></script>
     <link rel="stylesheet" href="/wdd331-practice/dist/styles.css">
     <!-- <link rel="stylesheet" href="/dist/styles.css"> -->
+    <link rel="stylesheet" href="./portfolio.css">
 
 </head>
 
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
+        <symbol id="icon-effects" viewBox="0 0 24 24">
+            <path
+                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+            <path d="M20 2v4" />
+            <path d="M22 4h-4" />
+            <circle cx="4" cy="20" r="2" />
+        </symbol>
+        <symbol id="icon-ratio">
+            <rect width="12" height="20" x="6" y="2" rx="2" />
+            <rect width="20" height="12" x="2" y="6" rx="2" />
+        </symbol>
+        <symbol id="icon-gradient" viewBox="0 0 24 24">
+            <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+            <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+            <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />
+            <path d="M2 12a10 10 0 0 1 18-6" />
+            <path d="M2 16h.01" />
+            <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+            <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+            <path d="M8.65 22c.21-.66.45-1.32.57-2" />
+            <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
+        </symbol>
+        <symbol id="icon-easing" viewBox="0 0 24 24">
+            <path d="m3 16 4 4 4-4" />
+            <path d="M7 20V4" />
+            <path d="M11 4h10" />
+            <path d="M11 8h7" />
+            <path d="M11 12h4" />
+        </symbol>
+        <symbol id="icon-motion" viewBox="0 0 24 24">
+            <rect width="18" height="18" x="3" y="3" rx="2" />
+            <path d="M17 12h-2l-2 5-2-10-2 5H7" />
+        </symbol>
+        <symbol id="icon-gallery" viewBox="0 0 24 24">
+            <rect width="18" height="14" x="3" y="3" rx="2" />
+            <path d="M4 21h1" />
+            <path d="M9 21h1" />
+            <path d="M14 21h1" />
+            <path d="M19 21h1" />
+        </symbol>
+    </svg>
+
     <nav class="home">
-        <h1>Crystal Paulino ~ WDD 331R Advanced CSS</h1>
-        <a href="./resume.html">Resume</a>
-        <a href="./contact.html">Contact</a>
+        <section>
+            <a href="./resume.html">Resume</a>
+            <a href="./contact.html">Contact</a>
+        </section>
         <details class="theme-menu">
             <summary class="theme-control">
                 <span class="visually-hidden">Color scheme</span>
@@ -40,40 +85,108 @@
         </details>
     </nav>
     <br>
-    <h4 class="intro">I am a Software Engineering student. The purpose of this site is to provide a space where I can
-        apply css styles
-        and learn more about this aspect of web development.</h4>
+    <main>
+        <div class="card description">
+            <h2>Crystal Paulino ~ WDD 331R Advanced CSS</h2>
+            <p class="intro">I am a Software Engineering student. The purpose of this site is to provide a space where
+                I can
+                apply css styles and learn more about this aspect of web development.</p>
+        </div>
+        <h3>Featured Projects</h3>
+        <div class="featured-projects">
+            <a class="card" href="./unit-3/visual-effects/index.html">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none'
+                    stroke="currentColor">
+                    <use href='#icon-effects'></use>
+                </svg>
+                Visual Effects</a>
+            <a class="card" href="./unit-4/grid-layouts/cards.html">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none'
+                    stroke="currentColor">
+                    <use href='#icon-ratio'></use>
+                </svg> Cards and Aspect Ratio</a>
+            <a class="card" href="./unit-6/motion/index.html">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none'
+                    stroke="currentColor">
+                    <use href='#icon-motion'></use>
+                </svg> Meaningful Motion</a>
+            <a class="card" href="./teaching/advancedgradients/index.html">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none'
+                    stroke="currentColor">
+                    <use href='#icon-gradient'></use>
+                </svg> Advanced Gradients</a>
+            <a class="card" href="./teaching/carousel/index.html">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none'
+                    stroke="currentColor">
+                    <use href='#icon-gallery'></use>
+                </svg> Scroll Snap Carousel </a>
+            <a class="card" href="./teaching/animationchoreo/index.html">
+                <svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" fill='none'
+                    stroke="currentColor">
+                    <use href='#icon-easing'></use>
+                </svg> Animation Choreography and Custom Easing</a>
 
+        </div>
+        <section class="card">
+            <h3>Assignments</h3>
+            <h4>Unit 1: Foundations and the Modern CSS Landscape</h4>
+            <div class="assignments">
+                <a class="card" href="unit-1/custom-properties/index.html">Custom Properties &amp; Nesting</a>
+            </div>
 
-    <div class="assignments">
-        <h2>Assignments</h2>
-        <ul>
-            <a href="unit-1/custom-properties/index.html">Custom Properties and Nesting </a> <br> <br>
-            <a href="unit-2/layered-components/index.html">Layered Components </a> <br> <br>
-            <a href="./index.html">Architecture and Build </a> <br>
-            <a href="./unit-3/visual-effects/index.html">Visual Effects</a> <br> <br>
-            <a href="./unit-4/grid-layouts/editorial.html">Editorial Grid and Responsive Card Grid</a> <br>
-            <a href="./unit-4/grid-layouts/cards.html">Cards and Aspect Ratio</a> <br> <br>
-            <a href="./unit-4/advanced/container-demo.html">Container Demo</a> <br>
-            <a href="./unit-4/advanced/sticky-demo.html">Sticky Demo</a> <br> <br>
-            <a href="./unit-6/motion/index.html">Meaningful Motion</a> <br>
-            <a href="./unit-6/motion/index.html">Accessible SVG Icon System</a> <br> <br>
-            <a href="./resume.html">Resume</a> <br>
-            <a href="./contact.html">Contact</a> <br> <br>
+            <h4>Unit 2: Cascade Control, Architecture, and Tooling</h4>
+            <div class="assignments">
+                <a class="card" href="unit-2/layered-components/index.html">Layered Components</a>
+                <a class="card" href="./index.html">Architecture &amp; Build</a>
+            </div>
 
+            <h4>Unit 3: Color, Theming, and Visual Effects</h4>
+            <div class="assignments">
+                <a class="card" href="./unit-3/visual-effects/index.html">Visual Effects</a>
+            </div>
+
+            <h4>Unit 4: Layout Mastery</h4>
+            <div class="assignments">
+                <a class="card" href="./unit-4/grid-layouts/cards.html">Cards and Aspect Ratio</a>
+                <a class="card" href="./unit-4/grid-layouts/editorial.html">Editorial Grid &amp; Responsive Card
+                    Grid</a>
+                <a class="card" href="./unit-4/advanced/container-demo.html">Container Demo</a>
+                <a class="card" href="./unit-4/advanced/sticky-demo.html">Sticky Demo</a>
+            </div>
+            <h4>Unit 5: Resume with Print CSS and Form</h4>
+            <div class="assignments">
+                <a class="card" href="./resume.html">Resume with Print and Contact</a>
+            </div>
+            <h4>Unit 6: Motion, SVG, and Portfolio Polish</h4>
+            <div class="assignments">
+                <a class="card" href="./unit-6/motion/index.html">Meaningful Motion</a>
+                <a class="card" href="./unit-6/motion/index.html">Accessible SVG Icon System</a>
+            </div>
+        </section>
+        <div>
             <h3>Teaching Topics</h3>
-            <a href="./teaching/bootstrap/bootstrap.html"> Bootstrap </a> <br> <br>
-            <a href="./teaching/custommedia/home.html"> Custom-Media </a> <br> <br>
-            <a href="./teaching/currentcolor/index.html"> Current Color Patterns</a> <br> <br>
-            <a href="./teaching/advancedgradients/index.html"> Advanced Gradients </a> <br> <br>
-            <a href="./teaching/ratioandfit/index.html"> Aspect Ratio and Object Fit </a> <br> <br>
-            <a href="./teaching/carousel/index.html"> Scroll Snap Carousel </a> <br> <br>
-            <a href="./teaching/textandfonts/index.html"> Text Properties and Font Units </a> <br> <br>
-            <a href="./teaching/formcontrol/index.html"> Form Controls </a> <br> <br>
-            <a href="./teaching/animationchoreo/index.html">Animation Choreography and Custom Easing</a>
-            <a href="./unit-6/svg-fundamentals/index.html">SVG Fundamentals and viewBox</a>
-        </ul>
-    </div>
+            <ul class="teaching">
+                <a class="card" href="./teaching/bootstrap/bootstrap.html"> Bootstrap </a> <br> <br>
+                <a class="card" href="./teaching/custommedia/home.html"> Custom-Media </a> <br> <br>
+                <a class="card" href="./teaching/currentcolor/index.html"> Current Color Patterns</a> <br> <br>
+                <a class="card" href="./teaching/textandfonts/index.html"> Text Properties and Font Units </a> <br> <br>
+                <a class="card" href="./teaching/formcontrol/index.html"> Form Controls </a> <br> <br>
+                <a class="card" href="./unit-6/svg-fundamentals/index.html">SVG Fundamentals and viewBox</a>
+                <a class="card" href="./teaching/carousel/index.html">Scroll Snap Carousel </a>
+                <a class="card" href="./teaching/ratioandfit/index.html">Aspect Ratio and Object Fit </a>
+
+
+            </ul>
+        </div>
+        <!-- <a href="./resume.html">
+            <button class="resume">
+                Click to see my Resume
+            </button>
+        </a> -->
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 My Practice Site</p>
+    </footer>
 </body>
 
 </html>

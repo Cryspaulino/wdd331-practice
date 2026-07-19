@@ -35,8 +35,11 @@ main {
     }
   }
 
-  .linkedin {
+  .linkedin, .projects {
     cursor: pointer;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
 
     a {
       all: unset;

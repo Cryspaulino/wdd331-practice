@@ -1,8 +1,19 @@
 header {
   background-color: var(--color-accent);
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    a {
+      padding: 10px;
+    }
+  }
 }
 
 main {
+  margin-top: calc(var(--space-large) * 3);
   max-width: 100%;
 }
 

@@ -1,4 +1,8 @@
 .editorial-page .layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+
   margin: var(--space-large);
   display: grid;
   grid-template-areas:
@@ -7,6 +11,7 @@
   gap: var(--space-medium);
 
   main {
+    flex: 1;
     grid-area: main;
     margin: var(--space-large);
 
@@ -17,7 +22,7 @@
 
   aside {
     margin-left: var(--space-large);
-    padding: var(--space-large);
+    padding: calc(var(--space-large) * 2);
     grid-area: sidebar;
     background-color: var(--color-surface);
   }

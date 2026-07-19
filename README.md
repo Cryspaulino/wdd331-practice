@@ -13,7 +13,7 @@ every push to main.
 
 ## Pages
 
-How is my portfolio organized? 
+How is my portfolio organized? When exploring my portfolio, you will open the website to the Home page, which includes a guide to some of my strong projects and all other assignments completed throughout the course. Any of the cards will direct you to the respective demo. At the top you will notice the nav bar with two links to my Resume and to Contact me. Each page links back to the Home page where you can keep finding more about the things I have learn in this course.
 
 - [Home](index.html)
 - [Custom Properties and Nesting](unit-1/custom-properties/index.html)
@@ -26,7 +26,6 @@ How is my portfolio organized?
 - [Resume with Print CSS and Form] (./resume.html)
 - [Meaningful Motion] (unit-6/motion/index.html)
 - [Accessible SVG Icon System] (unit-6/motion/index.html) Adding icons to different elements on the page.
-
 
 
 Other Notes:
