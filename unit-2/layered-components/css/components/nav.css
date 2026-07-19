@@ -1,8 +1,8 @@
 nav {
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-headings);
   font-size: var(--font-size-body);
   line-height: var(--line-height-open);
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
   padding: var(--space-small);
   padding-left: var(--space-small);
 
@@ -25,10 +25,6 @@ nav {
   a {
     color: var(--color-text);
     font-size: var(--font-size-body);
-
-    /* :is([aria-current]) {
-      color: var(--color-accent);
-      } */
   }
 
   :not([aria-current]) {

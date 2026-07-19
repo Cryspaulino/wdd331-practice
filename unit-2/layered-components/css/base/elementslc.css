@@ -1,12 +1,7 @@
-@import url("./tokens/colors.css");
+/* @import url("./tokens/colors.css");
 @import url('../tokens/variables.css');
-/* Base element styles: body, headings, links, lists.
-   No classes here, only bare HTML element selectors.
-   Reference tokens with var(). */
 
-/* TODO: Style body, headings, links, and other base elements */
 body {
-  /* background-color: var(--color-background); */
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-background);
@@ -27,7 +22,6 @@ body {
   }
 
   .board-header {
-    /* text alignment */
     align-content: center;
     margin: var(--spacing-sm);
     padding: var(--padding);
@@ -87,10 +81,9 @@ body {
   }
 
   .board-footer {
-    /* muted color, top border */
     align-content: center;
     padding: var(--padding);
     color: var(--color-text);
     border-top: 1px solid var(--color-accent);
   }
-}
+} */

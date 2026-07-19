@@ -1,0 +1,56 @@
+@media print {
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14pt;
+    line-height: var(--line-height-tight);
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
+
+  nav,
+  footer,
+  button,
+  .no-print {
+    display: none;
+  }
+
+  h2, .aspect {
+    width: 100%;
+    font-size: 16pt;
+    text-align: left;
+    background: none;
+    justify-self: unset;
+    border-bottom: 1px solid black;
+  }
+
+  span {
+    font-style: italic;
+  }
+
+  .summary,
+  .experience,
+  .education {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .summary {
+    margin-top: calc(var(--space-large) * 2);
+    margin-bottom: var(--space-small);
+  }
+
+  .experience {
+    margin-top: var(--space-small);
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+}

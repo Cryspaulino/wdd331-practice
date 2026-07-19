@@ -5,14 +5,11 @@ body {
   line-height: var(--line-height-display);
   color: var(--color-text);
   background-color: var(--color-background);
-  /* line-height: var(--space-lg); */
 
   :is(h1, h2) {
     font-family: var(--font-family-headings);
     font-size: var(--font-size-heading-sm);
     line-height: var(--line-height-tight);
-
-    /* padding: var(--space-small); */
   }
 
   section {
@@ -20,9 +17,7 @@ body {
   }
 
   footer {
-    background-color: var(--color-primary);
-    position: absolute;
-    bottom: 0;
+    background-color: var(--color-accent);
     height: 70px;
   }
 }

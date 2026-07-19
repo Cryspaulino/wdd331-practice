@@ -13,6 +13,8 @@ every push to main.
 
 ## Pages
 
+How is my portfolio organized? 
+
 - [Home](index.html)
 - [Custom Properties and Nesting](unit-1/custom-properties/index.html)
 - [Layered Components](unit-2/layered-components/index.html)
@@ -21,6 +23,7 @@ every push to main.
 - [Editorial Grid and Responsive Card Grid] (unit-4/grid-layout/editorial.html) (unit-4/grid-layout/cards.html) Here I applied grid with template areas and aspect ratio.
 - [Subgrid, Container Queries, and Sticky] (unit-4/advanced/sticky-demo.html) This one contains the container demo, the sticky demo and the updates to the card grid topic.
 - [Typography Tokens and Web Font] (index.html) The type tokens live in the unit-2/layered-components/tokens/variables.css file. I chose 3 different web fonts:  Margarine for buttons/accent, Archivo Narrow for headings and Inconsolata for body.
+- [Resume with Print CSS and Form] (./resume.html)
 - [Meaningful Motion] (unit-6/motion/index.html)
 - [Accessible SVG Icon System] (unit-6/motion/index.html) Adding icons to different elements on the page.
 

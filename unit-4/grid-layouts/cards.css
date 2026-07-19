@@ -1,5 +1,5 @@
 header {
-  background-color: var(--color-primary);
+  background-color: var(--color-accent);
 }
 
 main {
@@ -20,7 +20,7 @@ main {
 
     div:first-child {
       height: 150px;
-      background-color: var(--color-primary);
+      background-color: var(--color-accent);
     }
 
     div:last-child {

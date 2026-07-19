@@ -11,10 +11,9 @@ button {
   padding: var(--space-small);
   margin: var(--space-small);
   font-family: var(--font-family-accent);
-  /* font-size: var(--font-size-heading-lg); */
   border-radius: var(--border-radius);
 
   &:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
   }
 }

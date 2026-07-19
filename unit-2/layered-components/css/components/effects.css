@@ -42,9 +42,9 @@
 
     background: linear-gradient(
       var(--angle),
-      rgb(from var(--color-primary) r g b / 0.7),
+      rgb(from var(--color-accent) r g b / 0.7),
       rgb(from var(--color-background) r g b / 1),
-      rgb(from var(--color-primary) r g b / 0.7)
+      rgb(from var(--color-accent) r g b / 0.7)
     );
 
     animation: spin 10s linear infinite;
