@@ -8,7 +8,7 @@
    padding: calc(var(--space-small) - 7px);
 
    &:where(.open) {
-       background-color: var(--color-primary);
+       background-color: var(--color-accent);
    }
 
    &:where(.construction) {

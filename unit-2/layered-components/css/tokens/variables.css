@@ -10,9 +10,6 @@
   --space-medium: var(--spacing-md);
   --space-large: var(--spacing-lg);
 
-  /* --font-family-headings: Georgia, 'Times New Roman', Times, serif;
-  --font-family-body: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
-
   --font-family-body: "Inconsolata", var(--font-family-sans);
   --font-family-headings: "Archivo Narrow", var(--font-family-mono);
   --font-family-accent: "Margarine", var(--font-family-body);
@@ -20,8 +17,6 @@
 
   --padding: clamp(1.5rem, 4vw, 2.5rem);
 
-  /* Set up */
-  /* Ratio is 1.25, major third, width 300-1200 */
   --font-family-sans: system-ui, sans-serif;
   --font-family-mono: monospace;
   --font-size-xs: 0.6rem;
@@ -35,26 +30,19 @@
   --line-height-tight: 1.2;
   --line-height-display: 1.1;
 
-  --font-size-caption: var(--font-size-xs);
   --font-size-notes: var(--font-size-sm);
   --font-size-body: var(--font-size-md);
   --font-size-heading-sm: var(--font-size-lg);
-  --font-size-heading-md: var(--font-size-xl);
-  --font-size-heading-lg: var(--font-size-2xl);
 
-  --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 24px;
-  --spacing-xl: 32px;
 
-  --radius-sm: 4px;
   --radius-md: 6px;
-  --radius-lg: 8px;
+  --radius-lg: 10px;
 
   --transition-base: 0.2s ease;
 
-  --icon-size-sm: 24px;
   --icon-size-md: 32px;
 
   --outline-width: 2px;

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="/wdd331-practice/dist/styles.css">
+    <!-- <link rel="stylesheet" href="/dist/styles.css"> -->
+    <link rel="stylesheet" href="./resume.css">
+    <link rel="stylesheet" href="./print.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./contact.html">Contact</a>
+
+            <details class="theme-menu">
+                <summary class="theme-control">
+                    <span class="visually-hidden">Color scheme</span>
+                </summary>
+                <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                    <label class="theme-control theme-pick" data-theme-pick="light">
+                        <input name="theme-preference" type="radio" value="light">
+                        <span aria-hidden="true">&#9788;&#65039;</span>
+                        <span class="visually-hidden">Light</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="system">
+                        <input name="theme-preference" type="radio" value="system" checked>
+                        <span aria-hidden="true">&#9881;&#65039;</span>
+                        <span class="visually-hidden">System default</span>
+                    </label>
+                    <label class="theme-control theme-pick" data-theme-pick="dark">
+                        <input name="theme-preference" type="radio" value="dark">
+                        <span aria-hidden="true">&#127766;</span>
+                        <span class="visually-hidden">Dark</span>
+                    </label>
+                </div>
+            </details>
+        </nav>
+    </header>
+
+    <main>
+        <div class="summary">
+            <h2>Crystal Paulino</h2>
+            <p>
+                I am a Senior in Software Engineering with a minor in Business Analytics at BYU idaho. I enjoy web
+                development, UX, creating project ideas and learning about new ways to implement them.
+            </p>
+        </div>
+        <div class="education block">
+            <h2 class="aspect">Education</h2>
+            <article>
+                <h4>Software Engineering</h4>
+                <span class="location">Brigham Young University - Idaho</span>
+                <ul>
+                    <li>
+                        Computing, Web design and AI societies. Hackathon planning team. Developed leadership and
+                        teamwork
+                    </li>
+                </ul>
+            </article> <br>
+            <article>
+                <h4>Commerce Fundamentals</h4>
+                <span class="location">Pathway Connect</span>
+                <ul>
+                    <li>
+                        Challenged ability to learn higher education courses in a secondary language and worked in teams
+                        to achieve common goals
+                    </li>
+                </ul>
+            </article>
+
+        </div>
+        <div class="experience block">
+            <h2 class="aspect">Experience</h2>
+            <article>
+                <h4>Web and Programming Certificate Tutor</h4>
+                <span class="location">Pathway Connect</span>
+                <ul>
+                    <li>Explored impact of learning with excitement, diving deeper into courses and adapting teachings
+                        for
+                        students in more than 4 countries</li>
+                    <li>Tutored students in fundamental concepts from 8 courses. Improved ability to analyze concepts
+                        and
+                        apply lessons to assigned projects</li>
+                </ul>
+            </article> <br>
+            <article>
+                <h4>AI Essentials Teaching Assistant</h4>
+                <span class="location">Brigham Young University - Idaho</span>
+                <ul>
+                    <li>
+                        Designed and refined assignments and team project ideas to enhance student career readiness,
+                        integrating AI as an engagement tool while maintaining originality, creativity, and leadership
+                        skills
+                    </li>
+                </ul>
+            </article>
+        </div>
+        <button class="linkedin">
+            <a href="https://www.linkedin.com/in/paulinocrystal/">Click to see my LinkedIn</a>
+        </button>
+        <div class="space"></div>
+    </main>
+
+</body>
+
+</html>

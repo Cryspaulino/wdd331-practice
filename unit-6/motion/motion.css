@@ -6,9 +6,6 @@
     font-family: var(--font-family-accent);
     font-size: var(--font-size-body);
     line-height: var(--line-height-open);
-
-    /* font-size: calc(var(--font-size-heading-sm) - 1rem); */
-    /* justify-content: space-between; */
   }
 
   nav a {
@@ -48,6 +45,10 @@
         border-color 120ms ease-in,
         transform 120ms ease-in;
     }
+  }
+
+  main{
+    max-width: 90%;
   }
 
   .btn-primary {

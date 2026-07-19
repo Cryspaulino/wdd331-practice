@@ -1,0 +1,51 @@
+.contact-form {
+  margin: var(--space-large);
+  margin-top: calc(var(--space-large) * 6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-large);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  input,
+  textarea {
+    padding: var(--space-large);
+    border-radius: var(--border-radius);
+  }
+
+  textarea {
+    min-height: var(--line-height-tight);
+    max-height: var(--line-height-open);
+    resize: vertical;
+    field-sizing: content;
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    margin-left: var(--space-small);
+
+    input {
+      font-size: var(--font-size-heading-sm);
+      width: var(--space-large);
+    }
+  }
+
+  button {
+    margin-top: var(--space-large);
+    font-size: var(--font-size-body);
+    font-family: var(--font-family-headings);
+    width: fit-content;
+    align-self: center;
+    padding: var(--space-small) var(--space-large);
+  }
+}
