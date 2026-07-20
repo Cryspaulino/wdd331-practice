@@ -1,5 +1,5 @@
-nav {
-  padding: var(--space-medium);
+main {
+  width: 100%;
 }
 
 .teaching,
@@ -17,15 +17,16 @@ h3 {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 1.5rem;
-  margin-bottom: calc(var(--space-large) * 8);
+  margin-bottom: calc(var(--space-large) * 3);
 }
 
 .card {
   /* box-shadow: var(--shadow-md); */
-  flex: 0 0 600px;
+  flex: 0 0 300px;
   scroll-snap-align: start;
-  padding: var(--padding);
+  padding: var(--space-small);
   text-align: center;
+  align-items: center;
 
   a {
     text-decoration: none;
