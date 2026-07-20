@@ -14,6 +14,7 @@ h3 {
 }
 
 main {
+  width: 70%;
   .summary {
     justify-items: center;
     text-align: justify;
