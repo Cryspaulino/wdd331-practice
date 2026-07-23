@@ -34,3 +34,7 @@ a {
     text-decoration: none;
     color: var(--accent-600);
 }
+
+.resume-main {
+    font-size: calc(var(--font-size-family) - 0.5vw);
+}
